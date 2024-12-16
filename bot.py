@@ -1,6 +1,8 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 YOUR_TOKEN = 'TOUR TOKEN HERE'
+
 bot = telebot.TeleBot(YOUR_TOKEN)
 
 # Dictionary, containing all of the dialogues and corresponding ids
