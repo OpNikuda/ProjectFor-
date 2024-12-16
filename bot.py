@@ -1,7 +1,7 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-bot = telebot.TeleBot(TELEGRAM_TOKEN)
+bot = telebot.TeleBot('YOUR TOKEN HERE')
 
 # Dictionary, containing all of the dialogues and corresponding ids
 dialogue_map = {
