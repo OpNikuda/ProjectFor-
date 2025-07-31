@@ -13,17 +13,21 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 ```bash
 YOUR_TOKEN = 'YOUR TOKEN HERE'
 bot = telebot.TeleBot(YOUR_TOKEN)
-Базы данных игры
+```
+
+### Базы данных игры
+
 Диалоги и сцены
-python
+```python
 dialogue_map = {
     (0, 1): "You dont remember neither who you are...",
     (0, 2): "Suddenly, you found yourself driving...",
     # ... остальные диалоги ...
     (-1, 1): "Game over."
 }
+```
 Варианты выбора и последствия
-python
+```python
 dialogue_map_branches = {
     (0, 5): [
         [1, "Yes sir! Washing floors...", 0, -100, 1],
@@ -32,8 +36,9 @@ dialogue_map_branches = {
     ],
     # ... остальные варианты выбора ...
 }
+```
 Описания последствий
-python
+```python
 conss_map = {
     1: "Your boss is happy. And your reputation is not.",
     2: "Auch. Everybody are impressed...",
